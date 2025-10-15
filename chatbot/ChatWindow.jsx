@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import MessageBubble from "./MessageBubble";
+import MessageBubble from "./MessageBubble.jsx";
 import { sendMessageToBot } from "../utils/bot.js";
 
 export default function ChatWindow({ onClose }) {
@@ -106,7 +106,7 @@ export default function ChatWindow({ onClose }) {
     ];
 
     return (
-        <div className="fixed bottom-5 right-5 sm:bottom-10 sm:right-10 w-11/12 max-w-xl sm:max-w-md md:max-w-xl bg-gradient-to-b from-orange-50 to-white shadow-2xl rounded-2xl border flex flex-col z-50">
+        <div className="chat-window fixed inset-x-0 bottom-0 sm:bottom-5 sm:right-5 sm:inset-x-auto w-full sm:w-96 md:w-[28rem] max-w-full bg-gradient-to-b from-orange-50 to-white shadow-2xl rounded-t-2xl sm:rounded-2xl border flex flex-col z-50 overflow-hidden">
             {/* Header */}
             <div className="flex justify-between items-center bg-orange-500 text-white px-4 py-3 rounded-t-2xl">
                 <h2 className="font-semibold text-lg">InstaTask Assistant</h2>
