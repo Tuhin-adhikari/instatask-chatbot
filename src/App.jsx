@@ -1,4 +1,4 @@
-import ChatBot from "../chatbot/ChatBot"; 
+import BotPanel from "./BotPanel";
 
 function App() {
   return (
@@ -6,8 +6,7 @@ function App() {
       <h1 className="text-2xl font-bold p-4">InstaTask Website</h1>
       <p className="p-4">Main project content goes here...</p>
 
-      {/* Chatbot Widget */}
-      <ChatBot />
+      <BotPanel />
     </>
   );
 }
